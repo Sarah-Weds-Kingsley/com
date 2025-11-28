@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kingsley & Sarah Wedding Invitation</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Social Media Meta Tags -->
+    <meta property="og:title" content="Kingsley & Sarah Wedding Invitation">
+    <meta property="og:description" content="Join us in celebrating our special day on February 28th, 2026 in Lagos, Nigeria">
+    <meta property="og:image" content="images/us.jpg">
+    <meta property="og:url" content="https://your-website.com/wedding-invitation">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="icon" href="images/us.jpg" type="image/png">
+</head>
+<body>
+   
+
+    <div class="container">
+        <div class="header">
+            <div class="couple-photo">
+                <img src="images/us.jpg" alt="Kingsley & Sarah">
+            </div>
+            <h1>Kingsley & Sarah</h1>
+            <p class="invitation-text">We are delighted to invite you to celebrate our wedding ceremony</p>
+        </div>
+
+        <div class="details">
+            <div class="venue">
+                <h2>Venue</h2>
+                <p>Lagos, Nigeria</p>
+            </div>
+            
+            <div class="date">
+                <h2>Date</h2>
+                <p>28th February, 2026</p>
+            </div>
+        </div>
+
+        <form id="rsvp-form" class="rsvp-form">
+            <h2>RSVP</h2>
+            
+            <div class="form-group">
+                <label for="name">Your Name</label>
+                <input type="text" id="name" name="name" required placeholder="Enter your full name">
+            </div>
+            
+            <div class="form-group">
+                <label for="plus-one">Will you be bringing a plus one?</label>
+                <div class="radio-group">
+                    <label class="radio-option">
+                        <input type="radio" name="plusOne" value="yes">
+                        <span class="radio-custom"></span>
+                        Yes
+                    </label>
+                    <label class="radio-option">
+                        <input type="radio" name="plusOne" value="no" checked>
+                        <span class="radio-custom"></span>
+                        No
+                    </label>
+                </div>
+            </div>
+            
+            <div class="form-group">
+                <label>Will you be available on 28th February, 2026?</label>
+                <div class="radio-group">
+                    <label class="radio-option">
+                        <input type="radio" name="attendance" value="yes" required>
+                        <span class="radio-custom"></span>
+                        Yes, I'll be there!
+                    </label>
+                    <label class="radio-option">
+                        <input type="radio" name="attendance" value="no" required>
+                        <span class="radio-custom"></span>
+                        Sorry, I can't make it
+                    </label>
+                </div>
+            </div>
+            
+            <div id="special-message" class="special-message hidden">
+                <p>🎉 Wonderful! Special invites will be sent to you soon! 🎉</p>
+            </div>
+            
+            <button type="submit" class="send-btn">Send RSVP</button>
+        </form>
+
+        <div class="footer">
+            <p>With love, Kingsley & Sarah</p>
+        </div>
+    </div>
+
+    <!-- Audio Element -->
+    <audio id="background-music" loop>
+        <source src="images/fireboy.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <script src="script.js"></script>
+</body>
+</html>
