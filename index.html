@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kingsley & Sarah Wedding Invitation</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Social Media Meta Tags -->
+    <meta property="og:title" content="Ify & Kingsley Wedding Invitation">
+    <meta property="og:description" content="Join us in celebrating our special day on February 28th, 2026 in Lagos, Nigeria">
+    <meta property="og:image" content="images/us.jpg">
+    
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="icon" href="images/us.jpg" type="image/jpg">
+</head>
+<body>
+   
+
+    <div class="container">
+        <div class="header">
+            <div class="couple-photo">
+                <img src="images/us.jpg" alt="Kingsley & Sarah">
+            </div>
+            <h1>Ify & Kingsley  #KingIfy2026</h1>
+            <p class="invitation-text">The Families of Okwusiuno and Amaechi are delighted to invite you to celebrate the wedding ceremony of their children</p>
+        </div>
+
+        <div class="details">
+            <div class="venue">
+                <h2>Venue</h2>
+                <p>Ikeja, Lagos, Nigeria</p>
+            </div>
+            
+            <div class="date">
+                <h2>Date</h2>
+                <p>28th February, 2026</p>
+            </div>
+        </div>
+
+        <form id="rsvp-form" class="rsvp-form">
+            <h2>RSVP</h2>
+            
+            <div class="form-group">
+                <label for="name">Your Name</label>
+                <input type="text" id="name" name="name" required placeholder="Enter your full name">
+            </div>
+            
+            <div class="form-group">
+                <label for="plus-one">Will you be bringing a plus one?</label>
+                <div class="radio-group">
+                    <label class="radio-option">
+                        <input type="radio" name="plusOne" value="yes">
+                        <span class="radio-custom"></span>
+                        Yes
+                    </label>
+                    <label class="radio-option">
+                        <input type="radio" name="plusOne" value="no" checked>
+                        <span class="radio-custom"></span>
+                        No
+                    </label>
+                </div>
+            </div>
+
+            <div class="form-group">
+    <label for="photo-upload">Upload a Memory Photo </label>
+    <div class="file-upload-area">
+        <input type="file" id="photo-upload" name="photo" accept="image/*" class="file-input">
+        <label for="photo-upload" class="file-upload-label">
+            <svg viewBox="0 0 24 24" width="24" height="24">
+                <path fill="currentColor" d="M14,13V17H10V13H7L12,8L17,13M19.35,10.03C18.67,6.59 15.64,4 12,4C9.11,4 6.6,5.64 5.35,8.03C2.34,8.36 0,10.9 0,14A6,6 0 0,0 6,20H19A5,5 0 0,0 24,15C24,12.36 21.95,10.22 19.35,10.03Z"/>
+            </svg>
+            <span>Choose a photo to share</span>
+        </label>
+        <div id="file-preview" class="file-preview"></div>
+    </div>
+</div>
+            
+            <div class="form-group">
+                <label>Will you be available on 28th February, 2026?</label>
+                <div class="radio-group">
+                    <label class="radio-option">
+                        <input type="radio" name="attendance" value="yes" required>
+                        <span class="radio-custom"></span>
+                        Yes, I'll be there!
+                    </label>
+                    <label class="radio-option">
+                        <input type="radio" name="attendance" value="no" required>
+                        <span class="radio-custom"></span>
+                        Sorry, I can't make it
+                    </label>
+                </div>
+            </div>
+            
+            <div id="special-message" class="special-message hidden">
+                <p>🎉 Wonderful! Special invites will be sent to you soon! 🎉</p>
+            </div>
+            
+            <button type="submit" class="send-btn">Send RSVP</button>
+        </form>
+
+        <div class="footer">
+            <p>With love, Ify & Kingsley</p>
+        </div>
+    </div>
+
+    <!-- Audio Element -->
+    <audio id="background-music" loop>
+        <source src="images/ed.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
+
+
+
+
+
+
